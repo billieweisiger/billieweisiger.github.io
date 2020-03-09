@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-animation: fadein 2s;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 8pt;
+  font-family: raleway;
+}
+
+body h2 {
+  font-size: 14pt;
+  color: black;
+}
+
+body h3 {
+  font-size: 10pt;
+  color: grey;
+}
+
+body h4 {
+  font-size: 12pt;
+  color: grey;
+}
+
+body h5 {
+  font-size: 12pt;
+  color: black;
+}
+
+#button {
+  animation-fill-mode: forwards;
+  display: inline-block;
+  background-color: white;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 2px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 40px;
+  color: grey;
+}
+
+.navbar {
+  font-family: raleway;
+  animation-fill-mode: forwards;
+  margin-bottom: 5%;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0;
+}
+
+.hello {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7%;
+  margin-top: 2%;
+}
+
+.hello h1 {
+  opacity: 1;
+  font-size: 20vw;
+  font-weight: bolder;
+}
+.hello h2 {
+  opacity: 1;
+  animation-delay: 1s;
+  font-size: 5vw;
+}
+
+.container img {
+  width: 100%;
+}
+
+.container2 img {
+  width: 100%;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 30%;
+}
+
+.casestudy a {
+  text-decoration: none;
+  color: black;
+}
+
+.casestudy a:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 30%;
+}
+
+.header {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.casestudy img {
+  width: 80%;
+  display: block;
+  margin: 2em;
+}
+
+.casestudy div {
+  margin-bottom: 2%;
+}
+
+.title {
+  text-align: center;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (min-width: 769px) {
+
+  .nav-item-active {
+    -webkit-text-fill-color: black;
+    text-decoration: overline;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    align-items: center;
+    margin-bottom: 12%;
+  }
+  .container2 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12%;
+  }
+
+  .header img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  .casestudy {
+    margin: auto;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item-active {
+    -webkit-text-fill-color: black;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    align-items: center;
+    margin-bottom: 12%;
+  }
+
+  .header img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .casestudy {
+    margin: auto;
+    width: 95%;
+  }
+  #button {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  #button:hover {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+}
