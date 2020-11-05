@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!-- designed & coded by billie :)  -->
   <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176783723-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-176783723-1');
-</script>
     <meta charset="utf-8">
-    <meta name="keywords" content="Billie, Weisiger, design, designer">
-    <meta name="description" content="Coming soon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>billie weisiger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billie Weisiger</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/eyes.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./script.js"></script>
   </head>
-  <body style = "background-color:white">
-    <h1 style="text-align:center">check back soon :)</h1>
 
-<footer> &copy; Billie Weisiger 2020</footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
-</body>
+  <body style="background-color:black">
+
+    <div id="main">
+      <nav role='navigation'>
+        <div id="menuToggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html" class="active"><li>WORK</li></a>
+            <a href="about.html"><li>ABOUT</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="about">
+        <a href="index.html" style="color:#df5d5c">WORK</a>
+        <span><a href="about.html">ABOUT</a></span>
+      </div>
+
+      <div class="intro">
+        <h1>Billie is a user experience designer based in Honolulu.</h1>
+        <h2>Currently @ <a href="https://www.uxrescue.org/" target="_blank">UX Rescue</a> / seeking new opportunities.</h2>
+      </div>
+
+      <a class="link" href="#projects">
+        <span class="link__arrow">
+        <span></span>
+        <span></span>
+        </span>
+        <span class="link__line"></span>
+        <span class="link__text">selected work</span>
+      </a>
+
+      <div class="work">
+        &mdash; SELECTED WORK &mdash;
+      </div>
+
+      <div class="projects" id="projects">
+        <div class="project_image">
+          <a href="triangle.html"><img src="./images/triangleheader.png" alt=""></a>
+        </div>
+        <div class="project_description">
+          <h1>TRIANGLE</h1> <br><br><br>
+          <h2>iOS App &mdash;</h2>
+          <h3>A conceptual music streaming platform.</h3> <br>
+          <h3><a href="triangle.html">VIEW &rarr;</a></h3>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="projects" id="projects">
+        <div class="project_image">
+          <a href="goodreads.html"><img src="./images/goodreadsheader.png" alt=""></a>
+        </div>
+        <div class="project_description">
+          <h1>GOODREADS</h1> <br><br><br>
+          <h2>Web page &mdash;</h2>
+          <h3>A homepage redesign.</h3> <br>
+          <h3><a href="goodreads.html">VIEW &rarr;</a></h3>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <footer>
+        <h2>&copy; 2020 Billie Weisiger</h2>
+      </footer>
+      
+    </div>
+
+  </body>
+
+
 </html>
