@@ -170,7 +170,7 @@ body {
 }
 
 .about {
-  margin-left: 85%;
+  margin-left: 75%;
   margin-top: 40px;
   width: 100%;
 }
@@ -584,7 +584,7 @@ footer {
 }
 
 .about_page a {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .about_page a:hover {
