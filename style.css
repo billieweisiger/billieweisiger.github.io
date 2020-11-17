@@ -687,6 +687,7 @@ footer {
 
   .about {
     visibility: hidden;
+    width: 0;
   }
 
   .contact {
