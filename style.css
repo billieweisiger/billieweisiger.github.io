@@ -184,7 +184,7 @@ body {
   padding-right: 2%;
 }
 
-.about a:hover {
+.about a:hover, .intro a:hover {
   text-decoration: none;
   animation: turn-pink 0.8s forwards;
 }
