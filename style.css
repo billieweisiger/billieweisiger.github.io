@@ -9,6 +9,7 @@ body {
 }
 
 .work {
+  visibility: visible;
   color:white;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
