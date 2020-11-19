@@ -9,7 +9,11 @@ body {
 }
 
 .work {
-  visibility: hidden;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin-left: 10%;
+  margin-top: 15%;
 }
 
 #menuToggle
@@ -338,6 +342,7 @@ hr.line {
 }
 
 .projects {
+  padding-top: 2%;
   display: grid;
   grid-template-columns: 60% 30%;
   grid-row-gap: 10%;
