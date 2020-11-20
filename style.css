@@ -579,7 +579,7 @@ footer {
 .about_page {
   width: 50%;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .about_page h1, .about_page a {
@@ -604,6 +604,7 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   padding: 10%;
+  padding-top: 2%;
 }
 
 .pictures img {
