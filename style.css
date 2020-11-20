@@ -598,6 +598,18 @@ footer {
   animation: turn-pink 0.8s forwards;
 }
 
+.pictures {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10%;
+}
+
+.pictures img {
+  width: 100%;
+}
+
 
 @media screen and (max-width:750px) {
 
