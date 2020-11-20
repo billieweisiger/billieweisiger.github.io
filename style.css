@@ -13,8 +13,8 @@ body {
   color:white;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  margin-left: 10%;
-  margin-top: 15%;
+  margin-left: 15%;
+  margin-top: 5%;
 }
 
 #menuToggle
@@ -344,6 +344,7 @@ hr.line {
 
 .projects {
   padding-top: 2%;
+  padding-left: 5%;
   display: grid;
   grid-template-columns: 60% 30%;
   grid-row-gap: 10%;
