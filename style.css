@@ -498,7 +498,7 @@ hr.line {
   letter-spacing: 1px;
 }
 
-.casestudy h3, .two_columns h3  {
+.casestudy h3, .two_columns h3, .two_columns a  {
   font-size: 1em;
   font-weight: 400;
   line-height: 25px;
@@ -637,6 +637,14 @@ footer {
 
 .pictures img {
   width: 100%;
+}
+
+.two_columns a {
+  color:black;
+}
+
+.two_columns a:hover {
+  animation: down-opacity 1s forwards;
 }
 
 
