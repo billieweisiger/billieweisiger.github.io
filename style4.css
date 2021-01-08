@@ -6,7 +6,6 @@
 
 body {
   visibility: hidden;
-  overflow-x: hidden;
   background-color: whitesmoke;
 }
 html {
