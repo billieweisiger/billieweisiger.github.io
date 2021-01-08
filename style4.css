@@ -31,6 +31,8 @@ html {
   -moz-animation-name: bounce;
 }
 
+
+
 #menuToggle
 {
   width:100%;
@@ -123,7 +125,7 @@ html {
   padding-top: 125px;
   right: -100px;
 
-  background: #ededed;
+  background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -143,7 +145,7 @@ html {
 
 #menu a {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: darkslategrey;
 }
 
