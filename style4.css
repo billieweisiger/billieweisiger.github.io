@@ -15,12 +15,6 @@ html {
 
 .first {
   height:80vh;
-  /* background-image: url("./images/bgcolorsnew.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .work a {
@@ -823,6 +817,11 @@ footer h4 {
 
   .intro {
     width: 80%;
+	margin-left: 10%;
+  }
+
+	.work a {
+    margin-left: 10%;
   }
 
   .header_image {
