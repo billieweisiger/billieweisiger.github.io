@@ -31,16 +31,13 @@ html {
   -moz-animation-name: bounce;
 }
 
-
-
 #menuToggle
 {
-  width:100%;
   visibility: hidden;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 50px;
-  left: 80%;
+  right: 50px;
 
   z-index: 1;
 
@@ -59,13 +56,15 @@ html {
 
   cursor: pointer;
 
-  opacity: 0;
-  z-index: 2;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
 
   -webkit-touch-callout: none;
 }
 
-
+/*
+ * Just a quick hamburger
+ */
 #menuToggle span
 {
   display: block;
@@ -102,6 +101,7 @@ html {
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -114,18 +114,17 @@ html {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-
 #menu
 {
   position: absolute;
-  width: 200px;
+  width: 100vw;
   height: 100vh;
   margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
-  right: 220px;
+  right: -100px;
 
-  background: black;
+  background: whitesmoke;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -138,15 +137,20 @@ html {
 #menu li
 {
   padding: 10px 0;
-  font-size: 20px;
-  text-align: right;
-  padding-right: 30%;
+  font-size: 22px;
+  text-align: center;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  opacity: 1;
 }
 
 #menu a {
   text-decoration: none;
-  font-family: 'Helvetica', sans-serif;
-  color: darkslategrey;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
 }
 
 #menu a.active {
@@ -156,14 +160,8 @@ html {
 }
 
 #menu a:hover {
-  color: darkslategrey;
+  color: #df5d5c;
   transition: color 0.3s ease;
-}
-
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
 }
 
 .intro {
@@ -762,16 +760,15 @@ footer h4 {
     font-size: 30px;
   }
 
-  #menu li
-  {
-    text-align: right;
-    padding-right: 30%;
-  }
-
   #menuToggle
   {
     visibility: visible;
-    right: 20px;
+  }
+
+  #menu {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
   .casestudy_img {
