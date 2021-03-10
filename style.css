@@ -515,7 +515,7 @@ hr.line {
 
 .two_columns {
   display: grid;
-  grid-template-columns: 50% 40%;
+  grid-template-columns: 50% 30%;
   grid-column-gap: 5%;
   margin-left: 25%;
   text-align: left;
