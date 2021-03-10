@@ -488,7 +488,7 @@ hr.line {
   margin: auto;
 }
 
-.casestudy h1, .two_columns h1, .two_columns h2, .casestudy h2 {
+.casestudy h1, .two_columns h1, .two_columns h2, .casestudy h2, .two_columns a {
   font-size: 0.8em;
   font-weight: 600;
   color: grey;
