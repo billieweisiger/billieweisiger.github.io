@@ -753,6 +753,14 @@ footer h4 {
   animation: down-opacity 1s forwards;
 }
 
+.intro h3 {
+  color:darkslategrey;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 25px;
+}
+
 
 @media screen and (max-width:750px) {
 
