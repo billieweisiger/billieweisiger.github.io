@@ -522,6 +522,15 @@ hr.line {
   letter-spacing: 2px;
 }
 
+.casestudy a {
+  text-decoration: none;
+  color: #df5d5c;
+}
+
+.casestudy a:hover {
+  animation: down-opacity 0.8s forwards;
+}
+
 .two_columns {
   display: grid;
   grid-template-columns: 50% 30%;
