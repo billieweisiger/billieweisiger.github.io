@@ -494,6 +494,15 @@ hr.line {
   color: grey;
 }
 
+.casestudy_img h1 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: grey;
+}
+
 
 .casestudy h3, .two_columns h3 {
   font-size: 1.2em;
