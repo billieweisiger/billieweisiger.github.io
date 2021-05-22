@@ -64,10 +64,11 @@ div.cursor.isHovering {
 
   html {
     cursor: auto;
+    overflow-x: hidden;
   }
 
   .intro {
-    font-size: 4em;
+    font-size: 3em;
     width: 50%;
     margin: auto;
     padding: 0;
