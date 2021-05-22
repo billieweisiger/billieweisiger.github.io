@@ -57,7 +57,7 @@ div.cursor.isHovering {
   color: red;
 }
 
-@media screen and (max-width:900px) {
+@media only screen and (max-width: 768px) {
   .cursor {
     visibility: hidden;
   }
@@ -76,5 +76,6 @@ div.cursor.isHovering {
 
   .links a:hover {
     cursor: pointer;
+    color: red;
   }
 }
