@@ -56,3 +56,25 @@ div.cursor.isHovering {
   cursor: none;
   color: red;
 }
+
+@media screen and (max-width:750px) {
+  .cursor {
+    visibility: hidden;
+  }
+
+  html {
+    cursor: auto;
+  }
+
+  .intro {
+    font-size: 4em;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    padding-top: 10vh;
+  }
+
+  .links a:hover {
+    cursor: pointer;
+  }
+}
