@@ -57,7 +57,7 @@ div.cursor.isHovering {
   color: red;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:900px) {
   .cursor {
     visibility: hidden;
   }
