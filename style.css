@@ -261,7 +261,7 @@ section {
   grid-template-columns: 60% 30%;
   align-items: center;
   justify-content: center;
-  min-height: 100vh - 40px;
+  height: 80vh;
 }
 
 section div {
