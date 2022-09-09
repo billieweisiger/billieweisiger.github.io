@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Billie Weisiger | About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./images/eyes.png">
@@ -19,28 +20,27 @@
 
   <body style="background-color: #FAFAFA">
 
-      <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox"/>
-
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <ul id="menu">
-            <a href="index.html"><li>Work</li></a>
-            <a href="about.html" class="active"><li>About</li></a>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="desktopNav">
-        <a href="index.html">Work</a>
-        <span><a href="about.html" class="active">About</a></span>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-md">
+      <a class="navbar-brand" href="./index.html">Billie Weisiger</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Work</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="./#.html">About</a>
+          </li>
+        </ul>
       </div>
+    </div>
+    </nav>
 
 
-      <section>
+      <section class ="container-md">
         <div class="intro">
           <h1 id="intro">HELLO THERE &#129312;</h1>
           <h2 id="intro2">Nice to meet you.</h2>
@@ -52,17 +52,10 @@
             Interaction Design.
           </p>
         </div>
-
-        <div class="slides" id="intro3">
-          <img src="./images/1.jpg">
-          <img src="./images/2.jpeg">
-          <img src="./images/3.jpeg">
-          <img src="./images/4.jpg">
-        </div>
     </section>
-<!-- 
+
     <footer>
-      <div class="footer_columns">
+      <div class="footer_columns container-md">
         <div class="left">
           <h3 style="font-size:20px">&#128075;</h3>
           <h2>Send me an <a href="mailto:billie.weisiger@gmail.com?subject=Hello" style="color:#df5d5c">email</a></h2>
@@ -76,11 +69,13 @@
           <h4>&copy; 2022, Billie Weisiger</h4>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-      </body>
+    </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="./animation.js"></script>
   <script src="slides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </html>
