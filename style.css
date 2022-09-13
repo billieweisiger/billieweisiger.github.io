@@ -372,9 +372,16 @@ footer h4 {
   }
 }
 
+ul {
+  position: absolute;
+}
+
 /* smaller breakpoint */
 @media screen and (max-width:750px) {
 
+ul {
+  position: relative;
+}
   .intro {
     font-size: 0.5em;
     height: 40vh;
