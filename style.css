@@ -389,6 +389,27 @@ ul {
   position: absolute;
 }
 
+.sidebyside {
+  align-items: center;
+  background: whitesmoke;
+  padding: 2%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.sidebyside img {
+  width: 100%;
+}
+
+.two_columns {
+  display: grid;
+  grid-template-columns: 50% 30%;
+  grid-column-gap: 5%;
+  margin-left: 25%;
+  text-align: left;
+}
+
 /* smaller breakpoint */
 @media screen and (max-width:750px) {
 
