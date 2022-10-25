@@ -246,7 +246,9 @@ footer h2 {
   animation: fade-out 1s forwards;
 }
 
-
+.casestudy1 {
+  padding: 5% 0;
+}
 
 .casestudy h1 {
   font-family: work-sans, sans-serif;
@@ -258,6 +260,24 @@ footer h2 {
   color: #272727;
 }
 
+
+.casestudy1 h1 {
+  font-family: work-sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 47px;
+  letter-spacing: -0.02em;
+  color: #272727;
+}
+
+.casestudy1 h2 {
+  font-size: 16px;
+  font-family: work-sans;
+  font-weight: 600;
+  color: #272727;
+}
+
 .casestudy h2 {
   font-size: 20px;
   font-family: work-sans;
@@ -265,12 +285,12 @@ footer h2 {
   color: #A0A0A0;
 }
 
-.casestudy h3 {
+.casestudy h3, .casestudy1 h3 {
   font-size: 18px;
   font-family: work-sans;
 }
 
-.casestudy h4 {
+.casestudy h4, .casestudy1 h4 {
   font-size: 16px;
   font-family: work-sans;
   font-weight: 400;
@@ -278,7 +298,7 @@ footer h2 {
   text-transform: uppercase;
 }
 
-.casestudy p {
+.casestudy p, .casestudy1 p {
   font-family: 'work-sans', sans-serif;
   font-style: normal;
   font-size: 16px;
