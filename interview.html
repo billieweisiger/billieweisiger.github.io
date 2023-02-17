@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billie Weisiger</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/eyes.png">
+    <link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qub8rth.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./script.js"></script>
+  </head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-transparent">
+  <div class="container-md">
+    <a class="navbar-brand" href="./index.html">Billie Weisiger</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse position-relative" id="navbarNav">
+      <ul class="nav navbar-nav end-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+    <div id="main">
+
+    <div class="casestudy_heading">
+      <h1>Interview Scheduling</h1>
+      <h2>Self-scheduling experience for job candidates.</h2>
+    </div>
+
+    <div class="header_image">
+      <img src="./images/interviewheader.png" alt="Mockup of the interview scheduling screen on a laptop and a mobile phone.">
+    </div>
+
+        <div class="casestudy1 container-md col-md-6">
+          <h1>Overview</h1>
+          <p>
+            Before getting placed on assignment through <a href="https://www.employbridge.com/" target="_blank">EmployBridge</a>, job candidates submit an application, have an interview with a recruiter,
+            and do any required onboarding paperwork.
+            EB is building a new platform for candidates to complete this application / interview / onboarding flow and
+            I was responsible for designing the interview experience (scheduling, managing, cancelling, etc.)
+            for this.
+          </p>
+          <h1>My Role</h1>
+          <p>
+            I was the sole designer on this project and was responsible for all aspects of the design from wireframing through handoff. I
+            collaborated closely with a PM and engineers throughout this work.
+          </p>
+        </div>
+
+
+
+
+      <div class="casestudy1 container-md col-md-6">
+        <h1>Goals</h1>
+          <p>
+          The main business goal tied to this work is to <em>increase interview show rate by 15%.</em>
+          The research team conducted discovery around the current interview scheduling experience including <em>a survey with 57 respondants & user interviews</em>
+          to better understand what contributed to interview no-shows.
+        </p>
+        </div>
+
+        <div class="sidebyside container-md col-md-8">
+            <div>
+              <img src="./images/interviewresearch.png" alt="">
+            </div>
+        </div>
+
+        <div class="casestudy1 container-md col-md-6">
+        <h1>Design Process</h1>
+        <h2>Inspiration + early ideation</h2>
+          <p>
+            I started by reviewing the current process and analyzing scheduling experiences on other sites
+            for inspiration. Then I jumped into sketching + low-fidelity wireframing intial ideas.
+          </p>
+        </div>
+
+        <div class="sidebyside container-md col-md-8">
+            <div>
+              <img src="./images/interviewsketches.png" alt="Screenshots of scheduling experiences for inspiration.">
+            </div>
+        </div>
+
+        <div class="casestudy1 container-md col-md-6">
+        <h2>Integrating a vendor</h2>
+          <p>
+          To build this functionality, we integrated a third party scheduling vendor, TimeTap. It was unclear
+          at first how custom we would be able to make the experience for first release. So
+          I <em>analyzed the out of the box experience from the vendor</em> and customized
+          it as much as possible using their tools, then <em>documented changes our engineers
+          would be able to make with CSS.</em>
+
+          </p>
+      </div>
+
+
+          <div class="sidebyside container-md col-md-8">
+              <div>
+                <img src="./images/interviewoptimized.png" alt="Side by side comparison of out of the box TimeTap screens and optimized screens with anotated CSS changes.">
+              </div>
+          </div>
+
+          <div class="casestudy1 container-md col-md-6">
+            <p>
+            We ended up being able to build a custom experience, so I used the above screens & my initial wireframes as
+            a starting place, <em>incorporated our design system's components</em>, and iterated based on feedback from the UX team.
+            </p>
+        </div>
+
+
+
+      <div class="casestudy1 container-md col-md-6">
+        <h2>Accounting for all scenarios</h2>
+          <p>
+            The interview scheduler ended up being a very simple UI - one screen where the user
+            selects a date and time. However, this work had implications
+            outside of that including - What should the experience be if there's a technical issue with the scheduling service?
+            Where should information about the upcoming interview live within the experience? How will a user
+            reschedule or cancel an interview? What if a user skips scheduling and tries to move on to
+            other tasks?
+            <em>I created user flows to zoom out and visualize the holistic experience.</em>
+          </p>
+      </div>
+
+      <div class="sidebyside container-md col-md-8">
+          <div>
+            <img src="./images/interviewflow.png" alt="User flow with the final mobile screen designs">
+          </div>
+      </div>
+
+      <div class="casestudy1 container-md col-md-6">
+        <h2>Research informed decisions</h2>
+          <p>
+            The research team's findings highlighted the need for all of the information about an upcoming interview
+            to be easily accessible, and the rescheduling functionality to be easy to find.
+          </p>
+      </div>
+
+      <div class="sidebyside container-md col-md-8">
+          <div>
+            <img src="./images/interviewresearch2.png" alt="Two final desktop designs with annotations about research insights that informed them.">
+          </div>
+      </div>
+
+
+      <div class="casestudy1 container-md col-md-6">
+        <h2>Pushing our design system</h2>
+          <p>
+            Interview scheduling lives in between two other flows - the job application and the onboarding work.
+            The entry point into the scheduling flow is the "application success" screen - after a user submits
+            a job application, they are taken to a screen letting them know their application is in and prompting them
+            to schedule their interview. After their interview is scheduled, the user is taken to a second success
+            screen prompting them to continue to onboarding. <br><br>
+            The success screens are meant to add pause to the flow, display any relevant information to the user,
+            and encourage them to continue on to the next step. <em>The design for these needed to have a pattern that would be flexible enough to work for different use cases.</em>
+            I explored different designs, playing around with hierarchy and information architecture.
+          </p>
+      </div>
+
+      <div class="sidebyside container-md col-md-8">
+          <div>
+            <img src="./images/interviewiterations.png" alt="Different iterations of the success screen design.">
+          </div>
+      </div>
+
+      <div class="casestudy1 container-md col-md-6">
+          <p>
+            After rounds of design feedback, I landed on the designs below. <em>I worked with engineering to create a custom component</em>
+            (based on our existing stepper component) for our system.
+          </p>
+      </div>
+
+      <div class="sidebyside container-md col-md-8">
+          <div>
+            <img src="./images/interviewsuccess.png" alt="Final designs for the success screens at a mobile breakpoint.">
+          </div>
+      </div>
+
+      <div class="casestudy1 container-md col-md-6">
+        <h2>Celebrating the user</h2>
+          <p>
+            As we showed users where they were at in the process, we also wanted
+            to provide encouragement by celebrating the steps they completed. I achieved this by incorporating
+            emojis, encouraging copy, and adding in a confetti animation.
+          </p>
+      </div>
+
+      <div class="sidebyside container-md col-md-8">
+          <div>
+            <img src="./images/interviewcelebrations.png" alt="">
+          </div>
+      </div>
+
+      <div class="casestudy1 container-md col-md-6">
+        <h1>Results</h1>
+        <p>
+          This work has shipped, is currently live in 5 EB branches, and
+          is continuing to roll out. The goal of creating this streamlined scheduling experience
+          is to increase interview show rate by 15% (+900 interviews per week). Data is still being collected on that,
+          but <em>early success indicators
+          show that interviews scheduled have increased 10% and 92% of candidates that create an account
+          go on to schedule an interview.</em>
+        </p>
+      </div>
+      <div class="sidebyside container-md col-md-8">
+          <div>
+            <img src="./images/interviewcover.png" alt="Mockups of final interview screens.">
+          </div>
+      </div>
+
+
+    </div>
+
+    <footer>
+      <div class="container-md">
+        <h1>Thanks for stopping by!</h1>
+        <a href="mailto:billie.weisiger@gmail.com?subject=Hello" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/billie-weisiger/" target="_blank">LinkedIn</a>
+        <a href="./images/BillieWeisiger.pdf" target="_blank">Resume</a>
+        <h2 style="padding-top:5%">Website built by me &copy; 2023, Billie Weisiger</h2>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</html>
