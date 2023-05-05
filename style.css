@@ -98,13 +98,22 @@ em {
   margin-bottom: 2%;
   font-weight: 600;
 }
-.intro h2, .about_intro h2 {
+.intro h2 {
   color: #232324;
   font-family: 'Work-Sans', sans-serif;
   font-weight: 600;
   font-size: 5em;
   margin-top: 0;
 }
+
+.about_intro h2 {
+  color: #232324;
+  font-family: 'Work-Sans', sans-serif;
+  font-weight: 600;
+  font-size: 4em;
+  margin-top: 0;
+}
+
 
 .intro #billie {
   -webkit-text-stroke-width: 1px;
