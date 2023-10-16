@@ -386,10 +386,11 @@ footer h4 {
   line-height: 1.6;
 }
 
-.header_image {
-  width: 100%;
+.header_image.container {
   margin: auto;
   padding-bottom: 5%;
+  width:80%;
+  margin-top:5%;
 }
 
 .header_image img {
@@ -510,9 +511,24 @@ ul {
   text-align: left;
 }
 
+.transition {
+  width:80%;
+}
+
 
 /* smaller breakpoint */
 @media screen and (max-width:750px) {
+
+.header_image.container {
+    margin: auto;
+    padding-bottom: 5%;
+    width:100%;
+    margin-top:5%;
+  }
+
+  .transition {
+    width:100%;
+  }
 
   .casestudy1, .sidebyside {
     padding-left: 2%;
