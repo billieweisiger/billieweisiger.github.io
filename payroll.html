@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Billie Weisiger</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style">
     <link rel="icon" href="./images/eyes.png">
     <link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://use.typekit.net/qub8rth.css">
@@ -27,7 +27,6 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Work</a>
         </li>
-        
         <li class="nav-item">
           <a class="nav-link" href="./about.html">About</a>
         </li>
@@ -38,17 +37,12 @@
 
     <div id="main">
 
-    <div class="casestudy_heading">
-      <h1>Pay & Bill Adjustments</h1>
-      <h2>An internal payroll tool for EmployBridge.</h2>
-    </div>
-
-    <div class="header_image">
-      <img src="./images/payrollcover.png" alt="Mockup of the a payroll adjustment screen on a laptop.">
-    </div>
-
-    <div class="casestudy1 container-md col-md-6">
-      <h1 style="padding-bottom: 10px">THE PROBLEM</h1>
+      <div class="header_image container">
+        <img src="./images/payrollheader2.png" alt="Mockup of the adjustment tool on a laptop.">
+      </div>
+    <div class="casestudy1 container-md col-md-7">
+      <h1 style="padding-bottom: 2%">Overview</h1>
+      <h2>The Problem</h2>
       <p>
         EmployBridge is a staffing company that operates by paying workers placed on job assignments for billable clients.
         To ensure we're billing and paying accurately, a subset of colleagues is responsible for fixing pay & bill errors that occur
@@ -58,32 +52,32 @@
         that <em>the current adjustment process is inefficient and tedious for our colleagues.</em>
 
 
-        The process requires them to manually enter a lot of data and visit multiple databases to find
-        necessary information.
+        The process requires them to manually enter large amounts of data and visit multiple databases to find
+        necessary information. I was tasked with designing an internal tool to help streamline this process
+        & address pain points.
 
       </p>
     </div>
 
-    <div class="casestudy1 container-md col-md-6">
+    <div class="casestudy1 container-md col-md-7">
 
-      <h1 style="padding-bottom: 10px">OVERVIEW</h1>
       <div class="container row">
 
         <div class="col-sm" style="margin-left:-10px">
 
           <h2>My Role</h2>
-          <p>Product Designer</p>
-          <h2>Responsibilities</h2>
-          <p>
+          <p>Sole Designer, responsibilities:
+            <br>
+            User flows<br>
             Wireframing<br>
             Prototyping<br>
-            Usability testing<br>
-            Handoff<br>
+            Usability testing
 
           </p>
         </div>
         <div class="col-sm" style="margin-left:-10px; margin-right:-15px">
-          <p><em>Goal</em><br>
+          <h2>Goal</h2>
+          <p>
             The goal with this new experience is to create a more streamlined payroll
             adjustment process with fewer steps for our users.
           </p>
@@ -91,22 +85,99 @@
       </div>
     </div>
 
-    <div class="casestudy1 container-md col-md-6">
-      <h1 style="padding-bottom: 10px">IMPACT</h1>
+    <div class="casestudy1 container-md col-md-7">
+      <h2>Impact</h2>
       <p>
-        The improved payroll tool design is "way more user friendly" and "really easy [to use]", according to our users. It has less steps
-        than the current process and eliminates the need to jump between databases.
-        This work is currently in production and expected to roll out later this year.
+        The improved payroll tool design is "way more user friendly" and "really easy [to use]", according to our users. It cuts the number of steps
+        to submit an adjustment in half and eliminates the need for users to jump between databases, centralizing the process.
+
       </p>
 
-      <h2 style="padding-top: 24px">Old vs. new workflow</h2>
-      <img src="./images/payrollprocesschanges.png" alt="Comparison of the current process flow and the revised one.">
     </div>
 
-      <div class="casestudy1 container-md col-md-6">
-        <h1 style="padding-bottom: 10px">DESIGNS</h1>
-        <img src="./images/payrollscreensnew.png" alt="Mockups of final interview screens.">
+      <div class="casestudy1 container-md transition">
+        <img src="./images/transitiontest.png" alt="Mockups of final interview screens.">
       </div>
+
+      <div class="casestudy1 container-md col-md-7">
+        <h1 style="padding-bottom: 2%">Discovery</h1>
+        <h2>Reviewing the current process</h2>
+        <p>
+          I spent the first part of this project gaining context & trying to understand the current state of the adjustment process. This need was uncovered during research for another project, so there were a lot of user interview recordings and documentation available that helped me understand the pain points our users were facing.
+          <br><br>
+          Overview of the current process (see flow diagram below): There are two user groups handling this process - field colleagues submit adjustment requests which then get reviewed and processed by corporate payroll colleagues. The current process is very manual - field colleagues will fill out a spreadsheet and then email it over to corporate payroll. In order to fill out the sheet, they'll have to visit multiple databases for information. The user flow below shows the current process of submitting a request.
+        </p>
+          <img src="./images/payrolluserflow.png" alt="User flow of the current adjustment process.">
+        </div>
+
+
+        <div class="casestudy1 container-md col-md-7">
+          <h1 style="padding-bottom: 2%">Design</h1>
+          <h2>Initial ideation</h2>
+          <p>
+            Once I had a better idea of the problem at hand, I started out by sketching ideas before moving into Figma. I was provided with a flow diagram by the PO of the vision for the future adjustment process & I used this to help guide my initial sketches. However, I realized while starting to design that I had a lot of gaps in knowledge and questions about the process and our users.
+            <br><br>
+            To move forward, I set up a call with two SMEs. They ended up being really helpful resources and, as I iterated on my designs, I would go through the wireframes with them to make sure they made sense from a process perspective.
+          </p>
+          <img src="./images/payrollearlydesigns.png" alt="Initial sketches.">
+          <img src="./images/payrollearlydesigns2.png" alt="Initial wireframe with questions captured in sticky notes.">
+        </div>
+
+        <div class="casestudy1 container-md col-md-7">
+          <h2>Key design feature: Eliminating "swivel-chairing"</h2>
+          <p>
+            A big goal of this work is to eliminate “swivel-chairing” - aka users needing to toggle between different apps to complete this process. This was accomplished by pulling in data from the two databases users currently have to visit. In this new process, when submitter is filling out what needs to be adjusted, they can reference it in one centralized place.
+            <br><br>
+            The data table used to present this data is an element that went through several iterations. I first thought about using a drawer pattern (V1 below), but felt like this made the data feel disconnected from the larger context & wasn’t easily scannable. Then I tried a second approach with the data tables above the adjustment fields (V2 below). This made it easier to scan the data, but still felt disconnected.
+          </p>
+          <img src="./images/payrollkeyfeatureiterations.png" alt="First iteration of a data table shown in a side panel.">
+          <img src="./images/payrollkeyfeatureiterations2.png" alt="Second iteration of a data table, shown above the adjustment table.">
+          <p style="padding-top:2%">
+            I ended up going with the design below, which allows users to scan the data as they fill out the adjustment fields. This pattern is reused on the approver side, so approvers can quickly see what’s been adjusted next to what the original payment data is.
+          </p>
+          <img src="./images/payrollkeyfeature.png" alt="Final iteration of a data table, with notes highlighting features.">
+        </div>
+
+        <div class="casestudy1 container-md col-md-7">
+          <h2>Key design feature: Designing with a future state in mind</h2>
+          <p>
+            Another consideration I had in mind while designing was how to set up this tool for future iterations. Business stakeholders expressed that they want to be able to automate more of this process down the line; they eventually want to get to a place where we don’t need people going in to approve all of the adjustments. Because of that, I wanted to minimize the risk of human error when entering these adjustments.
+            <br><br>
+            The first way I accomplished this was by limiting the fields that a user can adjust. Before getting to the screen to enter an adjustment, the user fills out a form with some details about the action they’re taking, including the adjustment type (pay only, bill only, or pay & bill). The users can then only edit fields that correspond to the chosen adjustment type.
+          </p>
+          <img src="./images/payrollkeyfeature3.png" alt="Wireframe showing details about the adjustment data table.">
+          <p style="padding-top:2%">
+            The second way I accomplished this was by adding a confirmation modal after the user submits an adjustment. This adds a pause to the flow and prompts the user to check & confirm that they’re entering the correct information.
+          </p>
+          <img src="./images/payrollkeyfeature4.png" alt="Wireframe showing a confirmation modal.">
+        </div>
+
+
+
+        <div class="casestudy1 container-md col-md-7">
+          <h1>Usability Testing</h1>
+          <h2>Getting feedback from end users</h2>
+          <p>
+            After creating the designs, I put together a low-fidelity prototype and conducted two rounds of moderated testing per user type (four sessions total). With guidance from the UX research team, I created scripts where I wrote out tasks to give the users to complete in the prototype.
+
+          </p>
+          <img src="./images/payrolltesting.png" alt="Screenshot from a usability testing + snippet of one of the scripts.">
+          <p style="padding-top:2%">All of the testers were able to accomplish the given tasks. Most of the feedback was positive and validated the designs that were put together. Everyone I talked to was really excited about this tool and wanted to know when it would be available to use, which was encouraging.</p>
+          <img src="./images/payrollquotes.png" alt="Quotes from users during usability testing.">
+          <p style="padding-top:2%">One design change that came out of the tests, though, was changing language. Users didn’t understand the terms “Lawson” and “LPM” that I used in the wireframes. These were terms referring to the payroll databases. I changed those to “Processed” and “In Process”, which instead describe the data they’re seeing which users agreed made more sense to them. </p>
+        </div>
+
+
+        <div class="casestudy1 container-md col-md-7">
+          <h1>Results</h1>
+          <h2>A more streamlined experience</h2>
+          <p>
+            Not only were users excited about this tool during testing, but it also cut the number of steps in about half. The new process also centralizes the user flow and eliminates the need for users to reference external databases.
+            <br><br>
+              This work is currently in production and expected to roll out later this year.
+          </p>
+          <img src="./images/payrolluserflow2.png" alt="User flow diagram of the new adjustment process.">
+        </div>
 
     </div>
 
