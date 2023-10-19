@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Billie Weisiger</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style0.css">
     <link rel="icon" href="./images/eyes.png">
     <link  rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://use.typekit.net/qub8rth.css">
@@ -27,7 +27,6 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Work</a>
         </li>
-       
         <li class="nav-item">
           <a class="nav-link" href="./about.html">About</a>
         </li>
@@ -38,84 +37,139 @@
 
     <div id="main">
 
-    <div class="casestudy_heading">
-      <h1>Interview Scheduling</h1>
-      <h2>Self-scheduling experience for job candidates.</h2>
+      <div class="header_image container" style="width:80%; margin-top:5%">
+        <img src="./images/interviewheader2.png" alt="Mockup of the interview scheduling screen on a laptop and a mobile phone.">
+      </div>
+    <div class="casestudy1 container-md col-md-7">
+      <h1 style="padding-bottom: 2%">Overview</h1>
+      <h2>The Problem</h2>
+      <p>
+        Before getting placed on an assignment through EB, job candidates must complete an interview with a recruiter. The current interview scheduling experience has a <em>high no-show rate</em>.
+      </p>
     </div>
 
-    <div class="header_image">
-      <img src="./images/interviewheader.png" alt="Mockup of the interview scheduling screen on a laptop and a mobile phone.">
+    <div class="casestudy1 container-md col-md-7">
+
+      <div class="container row">
+
+        <div class="col-sm" style="margin-left:-10px">
+
+          <h2>My Role</h2>
+          <p>Sole Designer, responsibilities:
+            <br>
+            User flows<br>
+            Wireframing<br>
+            Prototyping<br>
+            High-fidelity mockups<br>
+            Responsive design
+
+          </p>
+        </div>
+        <div class="col-sm" style="margin-left:-10px; margin-right:-15px">
+          <h2>Goal</h2>
+          <p>
+            The goal with this new experience is to increase interview show rate by 15% (+900 interviews per week).
+          </p>
+        </div>
+      </div>
     </div>
 
-        <div class="casestudy1 container-md col-md-6">
-          <h1 style="padding-bottom: 10px">THE PROBLEM</h1>
+    <div class="casestudy1 container-md col-md-7">
+      <h2>Impact</h2>
+      <p>
+        This work shipped and rolled out in 5+ EB branches. Early success indicators show that <em>interviews scheduled have increased 10%</em> and <em>92% of candidates that create an account go on to schedule an interview</em>.
+      </p>
+
+    </div>
+
+      <div class="casestudy1 container-md col-md-7">
+        <h1 style="padding-bottom: 2%">Design Process</h1>
+
+        <h2>Working with a vendor</h2>
+        <p>
+          EB leveraged a 3rd party vendor, TimeTap, for the scheduling service. Initially, it was unclear if we’d be able to design a custom UI for this experience or if we’d need to use TimeTap’s out of the box UI.
+          <br><br>
+          I started by identifying quick wins we could make with CSS changes if we needed to go the out of the box route.
+        </p>
+        <img src="./images/interviewoptimized2.png" alt="Out of the box TimeTap UI and an optimized version with documented CSS changes.">
+      </div>
+
+      <div class="casestudy1 container-md col-md-7">
+        <h2>Inspiration & early ideation</h2>
+        <p>
+          Fortunately, we had the resources to build a more custom experience. Before sketching, I pulled inspiration from other scheduling tools to look for patterns that I could use.
+        </p>
+        <img src="./images/interviewwireframes.png" alt="Early wireframes of the interview scheduling experience at a desktop breakpoint.">
+        <p style="padding-top:2%">
+          After rounds of internal feedback, the “scheduling experience” ended up being one screen.
+          To simplify the experience, while keeping in any necessary information, I removed screens/components that wouldn’t be valuable to the user. For example, I initially included a screen where users could select a “service” to schedule for, but because the type of interview a user needs to schedule will be based on their application & decided in the back end, users won’t have a selection to make there.
+        </p>
+        <img src="./images/interviewiterations2.png" alt="V1 of the interview experience at a mobile breakpoint next to the final version.">
+      </div>
+
+      <div class="casestudy1 container-md col-md-7">
+        <h2>User flow</h2>
+        <p>
+          While the scheduling flow ended up being a simple, single screen, there were other use cases for me to think through. For example, what will happen if the scheduling service goes down? How will a user reschedule or cancel an interview? What if there are no time slots left?
+          <br><br>
+          To zoom out and visualize the holistic experience, I created a user flow diagram.
+        </p>
+        <img src="./images/interviewflow2.png" alt="A user flow (mobile breakpoint) of the interview scheduling experience.">
+      </div>
+
+        <div class="casestudy1 container-md col-md-7">
+          <h1>Leveraging Research</h1>
+          <h2>Research informed decisions</h2>
           <p>
-            Before getting placed on an assignment through EmployBridge, job candidates must complete an interview with a recruiter.
-            It was found that the current interview scheduling experience has a high no-show rate.
+            The research team investigated the no-show issue prior to me joining the project and were able to provide some insights that I referenced while designing.
           </p>
-          <div class="container row">
-            <div class="col-md" style="margin-left: -10px">
-              <p><em>16% of the no-show reasons were potentially avoidable</em><br>
-                  Research found that people often forgot about their interviews or had miscommunication from EB.
-              </p>
-            </div>
-            <div class="col-md" style="margin-left:-10px; margin-right:-15px">
-              <p>
-                <em>33% of users wanted to reschedule but had trouble when they tried</em><br>
-                Improving the rescheduling experience could potentially fix a pain point our users are facing
-                and decrease our interview no-show rate.
-              </p>
-            </div>
-          </div>
+          <img src="./images/interviewresearch3.png" alt="User flow diagram of the new adjustment process.">
+          <p style="padding-top:2%">
+            The researchers uncovered a lack of clear communication when confirming an interview being a pain point for users and recommended displaying all relevant details when a candidate is booking a slot.
+          </p>
+          <img src="./images/interviewresearchdetail.png" alt="Final interview success screen mockup with a note highlighting the details module.">
+          <p style="padding-top:2%">
+            They also recommended having an easy way for users to modify (reschedule/cancel) their interview. I reused the interview details module from the success screen on the talent dashboard, with the option to reschedule a cancel. This way, users will be able to view & modify upcoming interviews from their home page.
+          </p>
+          <img src="./images/interviewresearchdetail2.png" alt="User dashboard screen mockup with a note highlighting the reschedule CTA.">
         </div>
 
-        <div class="casestudy1 container-md col-md-6">
-
-          <h1>OVERVIEW</h1>
-          <div class="container row" style="padding-top: 15px">
-
-            <div class="col-sm" style="margin-left:-10px">
-
-              <h2>My Role</h2>
-              <p>Product Designer</p>
-              <h2>Responsibilities</h2>
-              <p>
-                Wireframing<br>
-                Prototyping<br>
-                User flows<br>
-                Contributing to the design system<br>
-                Engineering handoff<br>
-
-              </p>
-            </div>
-            <div class="col-sm" style="margin-left:-10px; margin-right:-15px">
-              <p><em>Business Goal</em><br>
-                The goal with this new experience
-                is to increase interview show rate by 15% (+900 interviews per week).
-              </p>
-            </div>
-          </div>
+        <div class="casestudy1 container-md col-md-7">
+          <h1>Key Design Features</h1>
+          <h2>Designing a component for scale</h2>
+          <p>
+            One screen that went through several iterations was the success screen. This interview scheduling experience was not only being redesigned to improve metrics, but it was also being designed to match the look & feel of a new talent portal EB was launching. In this new portal, job candidates are walked through applying, interview scheduling, and completing onboarding. The success screen appears after each of these steps - it confirms an action, lets the user know where they are in the process, and encourages them to the next step.
+            <br><br>
+            To bridge between submitting an application to scheduling an interview to then filling out onboarding paperwork, I needed to design a pattern that’s not only informative & encouraging, but is also reusable for multiple use cases.
+          </p>
+          <img src="./images/interviewsuccessiterations.png" alt="Iterations of the success screen (mobile breakpoint).">
+          <p style="padding-top:2%">
+            After several iterations (see above), I landed on the success screens below. I introduced a stepper component & worked with engineering to incorporate this into our Storybook library. This was flexible enough to fit all of the possible use cases.
+          </p>
+          <img src="./images/interviewsuccessfinal.png" alt="Final version of the success screen shown for different use cases.">
         </div>
 
-        <div class="casestudy1 container-md col-md-6">
-          <h1>IMPACT</h1>
+        <div class="casestudy1 container-md col-md-7">
+          <h2>Encouraging the user</h2>
           <p>
-            This work has shipped, is currently live in 5 EB branches, and
-            is continuing to roll out. The business goal of this streamlined scheduling experience
-            is to increase interview show rate by 15%. Data is still being collected on that,
-            but <em>early success indicators
-            show that interviews scheduled have increased 10% and 92% of candidates that create an account
-            go on to schedule an interview.</em>
+            I wanted to add elements to the success screen that would celebrate the user for the progress they’ve made & encourage them to continue in the process to finding a job. To do this, I incorporated celebratory copy and worked with engineering to implement a confetti animation upon page land.
           </p>
-          </div>
+          <img src="./images/interviewcelebration.png" alt="User flow diagram of the new adjustment process.">
+        </div>
 
-          <div class="casestudy1 container-md col-md-6">
-            <h1>DESIGNS</h1>
-            <h2>Main screens</h2>
-            <img src="./images/interviewcover.png" alt="Mockups of final interview screens.">
-            <h2>Full flow</h2>
-            <img src="./images/interviewflow.png" alt="User flow with the final mobile screen designs">
-          </div>
+
+        <div class="casestudy1 container-md col-md-7">
+          <h1>Results</h1>
+          <h2>Early success indicators</h2>
+          <p>
+            This work shipped and rolled out in 5+ EB branches. Early success indicators show that interviews scheduled have increased 10% and 92% of candidates that create an account go on to schedule an interview.
+          </p>
+          <h2>A tragic ending</h2>
+          <p>
+            Unfortunately, the new talent portal initiative this tool was designed to live in got rolled back, so this feature is no longer live.
+            Classic business reprioritization. It lives on in this case study &#129304;&#128532;
+          </p>
+        </div>
 
 
     </div>
@@ -126,7 +180,7 @@
         <a href="mailto:billie.weisiger@gmail.com?subject=Hello" target="_blank">Email</a>
         <a href="https://www.linkedin.com/in/billie-weisiger/" target="_blank">LinkedIn</a>
         <a href="./images/BillieWeisiger.pdf" target="_blank">Resume</a>
-        <h2 style="padding-top:5%">Website built by me &copy; 2023, Billie Weisiger</h2>
+        <h2 style="padding-top:5%">Website developed by me &copy; 2023, Billie Weisiger</h2>
       </div>
     </footer>
   </body>
