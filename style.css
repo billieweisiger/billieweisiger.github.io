@@ -515,6 +515,29 @@ ul {
   width:80%;
 }
 
+.visual img{
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 5%;
+}
+
+.visual {
+  padding-top: 5%;
+}
+
+.visual h1{
+  color: #838383;
+  font-family: 'Work-Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.visual h2 {
+  color: #000000;
+  font-family: 'Work-Sans', sans-serif;
+  font-size: 1em;
+}
+
 
 /* smaller breakpoint */
 @media screen and (max-width:750px) {
