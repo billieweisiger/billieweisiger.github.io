@@ -85,13 +85,13 @@ em {
 
 /* Main page intro section */
 .intro {
-  margin-top: 10%;
-  height: 50vh;
+  margin-top: 5%;
+  height: 60vh;
+padding: 0;
 }
 
-
 .intro h1, .about_intro h1 {
-  color: #838383;
+  color: #5C5C5C;
   font-family: 'Work-Sans', sans-serif;
   font-size: 1em;
   letter-spacing: 1px;
@@ -102,7 +102,7 @@ em {
   color: #232324;
   font-family: 'Work-Sans', sans-serif;
   font-weight: 600;
-  font-size: 5em;
+  font-size: 4em;
   margin-top: 0;
 }
 
@@ -114,6 +114,14 @@ em {
   margin-top: 0;
 }
 
+.intro h4 {
+  color: #232324;
+  width: 80%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px
+}
 
 .intro #billie {
   -webkit-text-stroke-width: 1px;
@@ -124,6 +132,20 @@ em {
 #billie:hover {
   animation: pink-fill 0.8s forwards;
   -webkit-text-stroke-width: 0px;
+}
+
+.intro_links {
+  padding-top: 24px;
+}
+
+.intro_links a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: #5C5C5C;
+}
+
+.intro_links a:hover {
+  animation: turn-pink 0.8s none;
 }
 
 /* Home page projects */
@@ -564,12 +586,16 @@ ul {
     position: relative;
   }
 
-  .intro {
-    font-size: 0.5em;
-    height: 40vh;
+
+.intro {
+    height: auto;
+    margin-bottom: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
   }
 
-  .about_intro h2 {
+  .about_intro h2, .intro h2 {
     font-size: 2.5em;
   }
 
