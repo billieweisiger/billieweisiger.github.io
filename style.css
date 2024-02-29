@@ -346,6 +346,36 @@ footer h4 {
 
 
 /* case study */
+.centerblock {
+  align-items: center;
+  background-color: #F9F8F8;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 8px;
+}
+
+
+.centerblock p, .centerblock h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.centerblock h1 {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-family: work-sans, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+}
+
+.centerblock p {
+  padding-bottom: 5%;
+  font-family: work-sans, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
 .loaded {
   animation: fade-in 2s forwards;
 }
@@ -563,6 +593,18 @@ ul {
 
 /* smaller breakpoint */
 @media screen and (max-width:750px) {
+.centerblock p, .centerblock h1 {
+    width: 80%;
+  }
+
+  .centerblock h1 {
+    font-size: 14px;
+  }
+
+  .centerblock p {
+
+    font-size: 16px;
+  }
 
 .header_image.container {
     margin: auto;
